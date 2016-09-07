@@ -31,9 +31,12 @@ function positiveRowsOnly (arr) {
 }
 
 function allSameVowels (arr) {
-  array.filter((word)=>{
-    let vowels = ['a', 'e', 'i', 'o', 'u']
-  // your code here
+  return arr.filter((word)=>{
+    let wordArr = word.split('')
+    return wordArr.filter((letter)=>{
+      return /[aeiou]/.test(letter)
+    }).every( (val, i, arr) => val === arr[0] ) // check that each element is identical, returns boolean
+  })
 };
 
 module.exports = {
