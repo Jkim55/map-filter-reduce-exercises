@@ -10,13 +10,11 @@ function shiftRight (array) {
   })
 };
 
-
 function onlyVowels (wordArr) {
   return wordArr.map ((word)=>{
     return word.match(/[aeiou]/gi).join('')
   })
 };
-
 
 function doubleMatrix (parentArr) {
   return parentArr.map ((numArr)=>{
