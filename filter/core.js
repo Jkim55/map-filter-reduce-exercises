@@ -1,31 +1,38 @@
 function onlyEven (arr) {
-  let new_arr = arr.filter((element)=>{
+  return arr.filter((element)=>{
     return (element % 2 === 0)
   })
-  return new_arr
 };
 
 function onlyOneWord (arr) {
-  let new_arr = arr.filter((words)=>{
+  return arr.filter((words)=>{
     return words.split(" ").length === 1
   })
-  return new_arr
 };
 
-function positiveRowsOnly (nestedArr) {
-  let new_nestedArr = nestedArr.filter((arr)=>{
-    var returnVal = true
-    for(var i=0; i<arr.length; i++){
-      if (arr[i] < 0){
-        returnVal = false
-      }
-    }
-    return returnVal
+// function positiveRowsOnly (arr) {
+//   return nestedArr.filter((arr)=>{
+//     var returnVal = true
+//     for(var i=0; i<arr.length; i++){
+//       if (arr[i] < 0){
+//         returnVal = false
+//       }
+//     }
+//     return returnVal
+//   })
+// }
+
+function positiveRowsOnly (arr) {
+  return arr.filter((row)=>{
+    return row.filter((num)=>{
+      return num > 0
+    }).length === row.length
   })
-  return new_nestedArr
 }
 
 function allSameVowels (arr) {
+  array.filter((word)=>{
+    let vowels = ['a', 'e', 'i', 'o', 'u']
   // your code here
 };
 
