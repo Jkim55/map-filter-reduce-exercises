@@ -9,7 +9,7 @@ describe('Map', function() {
     });
   });
 
-  xdescribe('#shiftRight()', function () {
+  describe('#shiftRight()', function () {
     it('shifts items in an array to the right by one', function () {
       var array = [{ name: '' }, 10, "left-side"];
       assert.deepEqual(["left-side", { name: '' }, 10], core.shiftRight(array));

@@ -4,16 +4,10 @@ function multiplyBy10 (arr) {
   })
 }
 
-function shiftRight (arr) {
-  // return arr.map((element)=>{
-  //   let new_index
-  //   if (new_index === -1){
-  //     new_index = arr.length -1
-  //     arr[new_index] = element
-  //   } else {
-  //     arr[new_index] = element
-  //   }
-  // })
+function shiftRight (array) {
+  return array.map((val, index, arr)=>{
+    return arr[index-1] || arr[arr.length-1];
+  })
 };
 
 
