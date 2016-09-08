@@ -41,7 +41,6 @@ function luckyNumbers (arr) {
   }, 'Your lucky numbers are: ')
 };
 
-
 module.exports = {
   sum: sum,
   productAll: productAll,

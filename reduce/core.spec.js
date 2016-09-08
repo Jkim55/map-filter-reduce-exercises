@@ -1,6 +1,7 @@
 var assert = require('assert'),
     core   = require('./core');
 
+
 describe('Reduce', function() {
   describe('#sum()', function () {
     it('sum all the numbers in the array', function () {
